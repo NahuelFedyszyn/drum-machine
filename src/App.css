@@ -1,38 +1,133 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background: rgb(182,182,182);
+  background: linear-gradient(135deg, rgba(182,182,182,1) 0%, rgba(121,9,9,1) 51%, rgba(5,5,5,1) 96%);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.mainDiv{
+  min-height: 80vh;
+  min-width: 80vw;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 15px 5px black;
+  border-radius: 15px;
+}
+
+h1{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+.table{
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+  
+}
+
+.col{
+  position: relative;
+  height: 60vh;
+}
+
+#leftCol{
+  
+  width: 80%;
+}
+
+#rightCol{
+  width:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightCol h2{
+  text-align: center;
+  font-size: 4rem;
+  transform: rotate(90deg);
+  width: 40vh;
+  white-space: nowrap;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant: all-petite-caps;
+  transition: 0.2s;
+}
+
+.linkContainer{
+  margin-top: 3rem;
+  margin-left: 0rem;
+}
+
+span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0; 
+  
+}
+
+.nahuelContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowContainer{
+  height: 100%;
+  width: 100%;
+}
+
+.aNahuel{
+  text-align: center;
+  font-style: italic;
+}
+
+.aIcon{
+  margin: auto 1rem;
+  font-size: 2rem;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#drum-machine{
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 33%;
+  margin: auto;
+}
+
+.drum-pad{
+  width: 25%;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   color: white;
+  text-shadow: 1px 1px 5px white;
+  background-color: brown;
+  margin: 0.2rem 0.2rem ;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0 15px 2px black inset;
 }
 
-.App-link {
-  color: #61dafb;
+.drum-pad:hover{
+  transform: scale(1.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
